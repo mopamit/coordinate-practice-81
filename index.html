@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#087f78">
+<title>תרגול נקודות במערכת הצירים</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main class="app-shell" id="app">
+  <header class="topbar">
+    <div class="logo-wrap"><img src="./logo-prismind.png" alt="Prismind"></div>
+    <div class="title-block"><h1>תרגול נקודות במערכת הצירים</h1><span>הרביע הראשון</span></div>
+    <button class="restart-btn" id="restart">↻ התחלה מחדש</button>
+  </header>
+  <div class="progress-line"><span id="progress"></span></div>
+  <section class="workspace">
+    <aside class="lesson-panel">
+      <div class="panel-heading"><strong>סוגי התרגול</strong><span>מתקדמים רק אחרי תשובה נכונה</span></div>
+      <nav id="modeNav"></nav>
+    </aside>
+    <section class="canvas-panel">
+      <div id="boardWrap" class="board-wrap"></div>
+      <div class="canvas-note" id="canvasNote">לחצו על נקודת חיתוך ברשת כדי לסמן או להזיז נקודה</div>
+    </section>
+    <aside class="task-panel" id="taskPanel"></aside>
+  </section>
+</main>
+<section class="completion hidden" id="completion">
+  <header class="completion-top"><img src="./logo-prismind.png" alt="Prismind"></header>
+  <div class="completion-card">
+    <div class="completion-check">✓</div><span class="eyebrow">סיום התרגול</span><h1>כל הכבוד!</h1>
+    <p>השלמתם את שלושת סוגי התרגילים במערכת הצירים.</p>
+    <div class="completion-grid" id="completionGrid"></div>
+    <button class="primary big" id="restartDone">להתחיל מחדש</button>
+  </div>
+</section>
+<script src="./app.js"></script>
+</body>
+</html>
